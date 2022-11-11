@@ -1,6 +1,6 @@
 package org.example.section05._0506
 
-class Palindrome {
+class MySolutionPalindrome {
 
     private fun valida(palindrome: String): Boolean {
         val metade: Int = palindrome.length / 2
@@ -14,7 +14,6 @@ class Palindrome {
             val caracterFinal = palindrome[(palindrome.length - 1) - i]
 
             isPalindromo = caracterInicial.equals(caracterFinal)
-
             i++
         }
         return isPalindromo
