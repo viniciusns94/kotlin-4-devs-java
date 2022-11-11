@@ -13,7 +13,11 @@ repositories {
 }
 
 dependencies {
+    runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:1.7.21")
+
     testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
+    testImplementation("org.amshove.kluent:kluent:1.72")
 }
 
 tasks.test {
